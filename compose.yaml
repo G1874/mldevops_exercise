@@ -1,0 +1,20 @@
+services:
+  workspace:
+    build: .
+    ipc: host
+    network_mode: host
+    privileged: true
+    runtime: nvidia
+    stdin_open: true
+    tty: true
+    security_opt:
+      - seccomp:unconfined
+      - apparmor:unconfined
+    volumes:
+      - /usr/lib/wsl:/usr/lib/wsl
+      - ./:/home/user/ws:cached
+    devices:
+      - /dev:/dev
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
