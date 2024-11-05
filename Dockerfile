@@ -12,6 +12,7 @@ RUN apt update && apt install -y \
         libxext6 \
         pkg-config \
         python3-dev \
+        git \
         # python3-pip \
     && apt clean
 
