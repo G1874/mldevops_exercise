@@ -24,12 +24,12 @@ repos:
       - id: black
         args: ["--line-length=120"]
 
-  # Codespell - Fix common misspellings in text files.
-  - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.6
-    hooks:
-      - id: codespell
-        args: [--write-changes]
+  # # Codespell - Fix common misspellings in text files.
+  # - repo: https://github.com/codespell-project/codespell
+  #   rev: v2.2.6
+  #   hooks:
+  #     - id: codespell
+  #       args: [--write-changes]
 
   # Pyupgrade - automatically upgrade syntax for newer versions of the language.
   - repo: https://github.com/asottile/pyupgrade
