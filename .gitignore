@@ -163,3 +163,7 @@ cython_debug/
 
 # Datasets
 fashion-mnist/
+
+# Training runs logging
+runs/
+wandb/
